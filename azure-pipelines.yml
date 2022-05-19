@@ -9,7 +9,8 @@ resources:
 - repo: self
 
 variables:
-  tag: '$(Build.BuildId)'
+  # tag: '$(Build.BuildId)'
+  tag: base-mysql-windows-2022
 
 stages:
 - stage: Build
