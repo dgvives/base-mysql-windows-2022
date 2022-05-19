@@ -26,4 +26,9 @@ stages:
         command: build
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         tags: |
-          $(tag)
+              $(tag)
+    - task: Docker@2
+      inputs:
+        containerRegistry: 'davidgarciavivesdn'
+        repository: 'base-mysql-windows-2022'
+        command: 'push'
