@@ -9,8 +9,8 @@ resources:
 - repo: self
 
 variables:
-  # tag: '$(Build.BuildId)'
-  tag: base-mysql-windows-2022
+   tag: '$(Build.BuildId)'
+  # tag: base-mysql-windows-2022
 
 stages:
 - stage: Build
@@ -28,6 +28,7 @@ stages:
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         tags: |
               $(tag)
+              | base-mysql-windows-2022
     - task: Docker@2
       inputs:
         containerRegistry: 'davidgarciavivesdn'
