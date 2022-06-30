@@ -1,5 +1,8 @@
 # base-mysql-windows-2022
 
+*Currently this is being tested, it is not confirmed this image works.*
+
+
 Dockerfile for MySQL 5.6.10 on Windows Server Core 2022
 
 Environment variable **MYSQL_ROOT_PASSWORD** required
